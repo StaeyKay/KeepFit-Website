@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <title>Keep Fit</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/swiper.css">
 </head>
 
 <body>
@@ -18,43 +21,74 @@
             <a href="">SERVICES</a>
             <a href="">NEWS</a>
             <a href="">CONTACT</a>
-        </div>
-        <!-- Swiper -->
-        <div dir="rtl" class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                <div class="swiper-slide">Slide 4</div>
-                <div class="swiper-slide">Slide 5</div>
-                <div class="swiper-slide">Slide 6</div>
-                <div class="swiper-slide">Slide 7</div>
-                <div class="swiper-slide">Slide 8</div>
-                <div class="swiper-slide">Slide 9</div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+            <button>BECOME A MEMBER</button>
         </div>
     </nav>
+    <!-- Hero section goes here -->
+    <section id="hero">
+        <div id="hero-overlay">
+            <!-- <div class=""> -->
+            <h1>HEALTH IS WEALTH</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Quisque quis bibendum augue, sit amet sollicitudin orci.
+                Nunc elementum sodales risus nec ornare. Nunc sit amet
+                elit eu mi suscipit convallis vel et libero. Ut quis rutrum
+                lorem. Vivamus imperdiet rutrum gravida.
+            </p>
+            <div class="subtext">
+                <button>GET STARTED</button>
+                <span>DOWNLOAD</span>
+            </div>
+        </div>
+    </section>
+    <!-- about us section goes here -->
+    <section id="aboutUs">
+        <div>
+            <h1>ABOUT US</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis bibendum
+                augue, sit amet sollicitudin orci. Nunc elementum sodales risus nec ornare.
+                Nunc sit amet elit eu mi suscipit convallis vel et libero. Ut quis rutrum
+                lorem. Vivamus imperdiet rutrum gravida. Etiam venenatis nibh non ligula
+                bibendum, id aliquam mi tincidunt. Sed facilisis ex nec nibh venenatis, quis
+                dapibus quam commodo. Proin et leo tempor, convallis risus non, gravida massa.
+                Donec gravida eget ligula nec auctor. Nunc at orci velit. Nunc volutpat sed
+                metus at auctor. Phasellus tristique mauris nec sapien lobortis, viverra
+                volutpat turpis semper. Morbi elit leo, venenatis eget nisl vel, elementum
+                volutpat dolor. Curabitur dapibus, erat pulvinar ultricies sodales, nunc orci
+                iaculis dolor, a consectetur magna lacus eleifend justo. Donec varius odio et
+                felis malesuada, quis bibendum sapien laoreet.
+            </p>
+        </div>
+        <div>
+            <img src="./assets/images/aboutUs.webp" alt="">
+        </div>
+    </section>
+    <!-- our schedule -->
+     <section>
+        <h1>OUR SCHEDULE</h1>
+        <div id="schedule-container">
 
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-    </script>
+        </div>
+     </section>
+    <!-- expert trainers section -->
+    <section>
+        <h1>EXPERT TRAINERS</h1>
+        <div class="grid-container">
+            <div>
+                <img src="./assets/images/trainer1.webp" alt="">
+                <p>Marie Simmons</p>
+            </div>
+            <div>
+                <img src="./assets/images/trainer1.webp" alt="">
+                <p>Marie Simmons</p>
+            </div>
+            <div>
+                <img src="./assets/images/trainer1.webp" alt="">
+                <p>Marie Simmons</p>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
