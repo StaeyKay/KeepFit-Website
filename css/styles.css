@@ -1,0 +1,18 @@
+/* #c41d82 */
+
+#nav-bar {
+    display: flex;
+}
+#nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+#logo {
+    width: 100px;
+}
+/* #nav-links img {
+    width: 13px;
+    height: 13px;
+} */
