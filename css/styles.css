@@ -54,6 +54,12 @@ body {
 }
 #hero-overlay p {
     padding: 0 300px;
+    margin-top: 0;
+}
+#hero-overlay h1 {
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0;
 }
 .subtext {
     display: flex;
@@ -71,28 +77,44 @@ body {
 #aboutUs {
     display: flex;
     justify-content: space-around;
-    padding: 150px;
-    column-gap: 100px;
+    padding: 0 100px;
+    column-gap: 150px;
 }
-#aboutUs div img {
-    height: 80vh;
+#aboutUs-img {
+    height: 500px; 
+    width: 500px;
+    object-fit: contain;  
+    border-radius: 50px;
 }
 #aboutUs div p {
     text-align: justify;
     justify-content: center;
 }
+.aboutUs-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 /* our schedule section styling */
 #schedule {
     background-color: rgb(240, 240, 240);
+    padding: 50px;
+}
+h1 {
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
 }
 #schedule-container {
     display: grid;
     padding: 0 30px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 50px;
+    /* width: 100%; */
 }
 #schedule-container div {
-    max-height: 50vh;
+    height: 50vh;
 }
 #schedule-container div button {
     background-color: black;
@@ -101,14 +123,18 @@ body {
     border: 2px solid black;
 }
 .schedule-image {
-    max-height: 50vh;
+    height: 100px;
+}
+.schedule-image img {
     width: 100%;
-    object-fit: cover;
+    height: 100%;
+    object-fit: cover; 
 }
 .schedule-subtext {
     align-items: center; 
     padding: 20px;  
     background-color: white;
+    height: 100px;
 }
 .grid-container {
     display: grid;
@@ -118,4 +144,21 @@ body {
 }
 .grid-container img {
     width: 100%;
+}
+#trainers {
+    padding: 50px;
+}
+.heading-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.heading-wrap h1:before {
+    width: 80px;
+    height: 2px;
+    background: black;
+    content: "";
+    display: block; /* Make it a block element */
+    margin: 0 auto 25px auto; /* Add some space between the line and the text */
 }
