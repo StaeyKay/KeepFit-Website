@@ -139,28 +139,30 @@ h1 {
     padding: 50px;
     height: 100%;
 }
-#schedule-container div {
+/* #schedule-container div {
     height: 50vh;
-}
+} */
 #schedule-container div button {
     background-color: black;
     color: white;
     padding: 10px 20px;
     border: 2px solid black;
 }
-.schedule-image {
-    height: 400px;
-}
+/* .schedule-image {
+    height: 300px;
+  
+} */
 .schedule-image img {
     width: 100%;
-    height: 338px;
+    height: 390px;
     object-fit: cover; 
 }
 .schedule-subtext {
     align-items: center; 
     padding: 20px;  
     background-color: white;
-    height: 80px;
+    height: 350px;
+
 }
 .grid-container {
     display: grid;
