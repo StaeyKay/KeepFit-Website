@@ -5,6 +5,9 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+nav {
+    padding: 7px 35px;
+}
 
 #nav-bar {
     display: flex;
@@ -22,6 +25,12 @@ body {
 #nav-links a {
     text-decoration: none;
     color: white;
+    padding: 6px 12px;
+}
+#nav-links a:hover {
+    background-color: white;
+    color: black;
+    padding: 6px 12px;
 }
 
 #nav-links button {
@@ -30,7 +39,11 @@ body {
     color: white;
     border: 2px solid white;
 }
-
+#nav-links button:hover {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
 #logo {
     width: 100px;
 }
@@ -55,6 +68,7 @@ body {
 #hero-overlay p {
     padding: 0 300px;
     margin-top: 0;
+    text-align: center;
 }
 #hero-overlay h1 {
     font-size: 40px;
@@ -71,6 +85,17 @@ body {
     background-color: black;
     color: white;
     border: 2px solid white;
+    cursor: pointer;
+}
+.subtext button:hover {
+    color: black;
+    background-color: white;
+}
+.subtext span:hover {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    cursor: pointer;
 }
 
 /* about us styling */
@@ -97,9 +122,10 @@ body {
     justify-content: center;
 }
 /* our schedule section styling */
-#schedule {
+.schedule {
     background-color: rgb(240, 240, 240);
     padding: 50px;
+    height: 100%;
 }
 h1 {
     font-size: 50px;
@@ -111,7 +137,7 @@ h1 {
     padding: 0 30px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 50px;
-    /* width: 100%; */
+    height: 100%;
 }
 #schedule-container div {
     height: 50vh;
@@ -123,18 +149,18 @@ h1 {
     border: 2px solid black;
 }
 .schedule-image {
-    height: 100px;
+    height: 400px;
 }
 .schedule-image img {
     width: 100%;
-    height: 100%;
+    height: 338px;
     object-fit: cover; 
 }
 .schedule-subtext {
     align-items: center; 
     padding: 20px;  
     background-color: white;
-    height: 100px;
+    height: 80px;
 }
 .grid-container {
     display: grid;
@@ -161,4 +187,54 @@ h1 {
     content: "";
     display: block; /* Make it a block element */
     margin: 0 auto 25px auto; /* Add some space between the line and the text */
+}
+#testimonial-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+    justify-content: space-around;
+    padding: 50px;
+    text-align: justify;
+}
+.testimonial-subtext {
+    display: flex;
+    column-gap: 20px;
+}
+.testimonial-background {
+    background-color: rgb(240, 240, 240);
+    padding: 10px 30px;
+    border-radius: 40px;
+}
+.testimonial-subtext img {
+    width: 6vw;
+    height: 6vw;
+    border-radius: 50%;
+}
+#footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: black;
+    color: white;
+    column-gap: 20px;
+    padding: 35px 50px;
+}
+#footer-container i {
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+    cursor: pointer;
+}
+#footer-container i:hover {
+    color: white;
+}
+.footer-color {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.footer-links a {
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+.footer-links a:hover {
+    color: white;
+    text-decoration: underline;
 }
