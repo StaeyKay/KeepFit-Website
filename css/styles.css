@@ -168,6 +168,11 @@ h1 {
     background-color: white;
     height: 350px;
 }
+.schedule-subtext > p {
+    font-weight: 400;
+    color: rgb(134, 142, 150);
+    width: 65%;
+}
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -176,6 +181,14 @@ h1 {
 }
 .grid-container img {
     width: 100%;
+}
+.grid-container div > p {
+    font-size: 19px;
+    text-align: center;
+}
+.grid-container div > p + p {
+    font-weight: 300;
+    color: rgb(134, 142, 150);
 }
 #trainers {
     padding: 50px;
@@ -205,7 +218,10 @@ h1 {
 .testimonial-subtext {
     display: flex;
     column-gap: 20px;
-
+}
+.testimonial-subtext div > p + p {
+    font-weight: 300;
+    color: rgb(134, 142, 150);
 }
 .testimonial-background {
     background-color: rgb(240, 240, 240);
