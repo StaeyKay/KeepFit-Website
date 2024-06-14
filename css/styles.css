@@ -6,7 +6,7 @@ body {
 }
 
 nav {
-    padding: 7px 35px;
+    padding: 7px 45px;
 }
 
 #nav-bar {
@@ -102,18 +102,19 @@ nav {
 #aboutUs {
     display: flex;
     justify-content: space-around;
-    padding: 0 100px;
+    padding: 50px 100px;
     column-gap: 150px;
 }
 #aboutUs-img {
-    height: 500px; 
+    height: 700px; 
     width: 500px;
     object-fit: contain;  
-    border-radius: 50px;
+    /* border-radius: 50px; */
 }
 #aboutUs div p {
     text-align: justify;
     justify-content: center;
+    width: 67%;
 }
 .aboutUs-text {
     display: flex;
@@ -158,11 +159,14 @@ h1 {
     object-fit: cover; 
 }
 .schedule-subtext {
-    align-items: center; 
+    display: flex;              /* Enable flexbox */
+    flex-direction: column;     /* Stack children vertically */
+    justify-content: center;    /* Center children vertically */
+    align-items: center;        /* Center children horizontally */
+    text-align: center; 
     padding: 20px;  
     background-color: white;
     height: 350px;
-
 }
 .grid-container {
     display: grid;
@@ -201,12 +205,15 @@ h1 {
 .testimonial-subtext {
     display: flex;
     column-gap: 20px;
+
 }
 .testimonial-background {
     background-color: rgb(240, 240, 240);
     padding: 10px 30px;
     border-radius: 40px;
+    width: 68%;
 }
+
 .testimonial-subtext img {
     width: 6vw;
     height: 6vw;
@@ -220,23 +227,24 @@ h1 {
     column-gap: 20px;
     padding: 35px 50px;
 }
-#footer-container i {
+#footer-container i:hover {
     color: rgb(255, 0, 0);
     font-size: 20px;
     cursor: pointer;
 }
-#footer-container i:hover {
+/* #footer-container i:hover {
     color: white;
-}
+} */
 .footer-color {
     font-size: 15px;
     color: rgba(255, 255, 255, 0.5);
+    width: 68%;
 }
 .footer-links a {
     text-decoration: none;
-    color: rgb(255, 0, 0);
+    color: white;    
 }
 .footer-links a:hover {
-    color: white;
     text-decoration: underline;
+    color: rgb(255, 0, 0);
 }
